@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.App-button {
+  background-color: #007d95;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px 24px;
+  border: 2px solid #007d95;
+
+}
+
+.App-button:hover {
+  background-color: #005667;
+  border: 2px solid #005667;
+  color: #007d95;
+}
+
+.h1 {
+  color: white;
+}

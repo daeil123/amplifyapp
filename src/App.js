@@ -41,6 +41,7 @@ export default function App() {
 }
 */
 
+/*
 
 import { Amplify } from 'aws-amplify';
 
@@ -73,4 +74,26 @@ export async function getStaticProps() {
   };
 }
 
+*/
 
+
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+
+
+function App({ signOut, user }) {
+  return (
+    
+    <div className="App">
+      <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1>Hello {user.username}</h1>
+      <button class="App-button" onClick={signOut}>Sign out</button>
+      </header>
+      </div>
+    
+  );
+}
+
+export default withAuthenticator(App);
